@@ -1,0 +1,35 @@
+@import "../../global";
+
+* {
+  margin: 0px;
+  padding: 0px; 
+  font-family: $main-font;
+  color: $main-font-color;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+a { 
+  color: $main-font-color;
+  text-decoration: None;
+}
+
+a:hover { 
+  color: $main-font-color;
+  text-decoration: None;
+ }
+
+html, 
+body,
+#root {
+    height:100vh;
+    width:100vw;
+    background: $site-bg;
+}
+
+.App {
+}

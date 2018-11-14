@@ -1,0 +1,51 @@
+// Colors
+$main-font-color: #413231;
+$header-color: $main-font-color;
+
+$border-color: rgba($main-font-color, .30);
+$hline-color: rgba($main-font-color, .30);
+
+$site-bg: #FFFFFF;
+$description-bg: #F2ECEB;
+$demo-bg: #E7DFDD;
+
+// Fonts
+//$main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$main-font: 'Open Sans Condensed', sans-serif;
+
+// Mixins
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+
+@mixin box-sizing($box-model) {
+    -webkit-box-sizing: $box-model; 
+       -moz-box-sizing: $box-model;
+            box-sizing: $box-model;
+  }
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow; 
+       -moz-box-shadow: $shadow;
+            box-shadow: $shadow;
+  }
+
+@mixin light-up($color) {
+    color: $color;
+    text-shadow: 0px 0px 2px $color;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}
+
+// Global classes
+.Capitalize {
+    text-transform: capitalize;
+}
